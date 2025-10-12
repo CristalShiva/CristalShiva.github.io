@@ -4,7 +4,7 @@ title: "Game Developer Portfolio"
 author_profile: true
 ---
 
-About Me
+## 👾 About Me
 
 <div class="about-section">
   <p>You are here for the technical stuff. Enjoy.</p>
@@ -31,7 +31,7 @@ About Me
 
 ---
 
-Featured Projects
+## 🎮 Featured Projects
 
 <div class="projects-container">
 
@@ -69,16 +69,10 @@ Featured Projects
         </div>
       </div>
 
-      <div class="project-media">
-        <img src="/assets/images/juegodenavesScreenShot.png" alt="Juego De Naves Gameplay" class="project-image">
-      </div>
-
-       <div class="project-media">
-        <img src="/assets/images/juegoNavesGameplay.png" alt="Juego De Naves Gameplay" class="project-image">
-      </div>
-
-      <div class="project-media">
-        <img src="/assets/images/juegoNavesBoss.png" alt="Juego De Naves Gameplay" class="project-image">
+      <div class="project-media-grid">
+        <img src="/assets/images/juegodenavesScreenShot.png" alt="Juego De Naves Gameplay" class="project-image clickable-image">
+        <img src="/assets/images/juegoNavesGameplay.png" alt="Juego De Naves Gameplay" class="project-image clickable-image">
+        <img src="/assets/images/juegoNavesBoss.png" alt="Juego De Naves Boss" class="project-image clickable-image">
       </div>
     </div>
 
@@ -121,8 +115,8 @@ Featured Projects
         </div>
       </div>
 
-      <div class="project-media">
-        <img src="/assets/assets/images/project2-screenshot.png" alt="Project 2 Screenshot" class="project-image">
+      <div class="project-media-grid">
+        <img src="/assets/images/project2-screenshot.png" alt="Project 2 Screenshot" class="project-image clickable-image">
       </div>
     </div>
 
@@ -131,6 +125,13 @@ Featured Projects
     </div>
   </section>
 
+</div>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="modalCaption"></div>
 </div>
 
 <!-- PROJECT TEMPLATE - Copy and paste below to add more projects -->
@@ -168,8 +169,8 @@ Featured Projects
       </div>
     </div>
 
-    <div class="project-media">
-      <img src="/assets/assets/images/your-screenshot.png" alt="Project Screenshot" class="project-image">
+    <div class="project-media-grid">
+      <img src="/assets/images/your-screenshot.png" alt="Project Screenshot" class="project-image clickable-image">
     </div>
   </div>
 
@@ -287,21 +288,27 @@ Featured Projects
   border: 1px solid var(--border-color);
 }
 
-/* Project Media */
-.project-media {
-  text-align: center;
+/* Project Media Grid for multiple images */
+.project-media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .project-image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .project-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Project Links - Centered single button */
@@ -345,6 +352,63 @@ Featured Projects
   margin: 4rem 0;
 }
 
+/* Modal/Lightbox Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  animation: zoom 0.3s ease;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1001;
+}
+
+.modal-close:hover {
+  color: #bbb;
+  transform: scale(1.1);
+}
+
+#modalCaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
 /* Use Minimal Mistakes CSS variables for dark theme compatibility */
 :root {
   --background-color: #fff;
@@ -356,7 +420,7 @@ Featured Projects
   --code-background-color: #f5f5f5;
 }
 
-/* Dark theme overrides - Minimal Mistakes will handle these */
+/* Dark theme overrides */
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #2d2d2d;
@@ -389,6 +453,25 @@ Featured Projects
   .skills-grid {
     grid-template-columns: 1fr;
   }
+  
+  .project-media-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .modal-content {
+    max-width: 95%;
+    max-height: 75%;
+  }
+  
+  .modal-close {
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+  }
 }
 
 /* Typography Improvements */
@@ -406,3 +489,43 @@ section {
   margin: 2rem 0;
 }
 </style>
+
+<script>
+// Lightbox functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the modal
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const captionText = document.getElementById("modalCaption");
+  const closeBtn = document.querySelector(".modal-close");
+
+  // Add click event to all clickable images
+  const images = document.querySelectorAll('.clickable-image');
+  images.forEach(img => {
+    img.addEventListener('click', function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    });
+  });
+
+  // Close modal when clicking X
+  closeBtn.addEventListener('click', function() {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape" && modal.style.display === "block") {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
