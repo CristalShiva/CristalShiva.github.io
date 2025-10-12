@@ -4,7 +4,7 @@ title: "Game Developer Portfolio"
 author_profile: true
 ---
 
-## 👾 About Me
+About Me
 
 <div class="about-section">
   <p>You are here for the technical stuff. Enjoy.</p>
@@ -31,7 +31,7 @@ author_profile: true
 
 ---
 
-## 🎮 Featured Projects
+Featured Projects
 
 <div class="projects-container">
 
@@ -129,9 +129,13 @@ author_profile: true
 
 <!-- Image Modal -->
 <div id="imageModal" class="modal">
-  <span class="modal-close">&times;</span>
-  <img class="modal-content" id="modalImage">
-  <div id="modalCaption"></div>
+  <div class="modal-container">
+    <span class="modal-close">&times;</span>
+    <div class="modal-image-container">
+      <img class="modal-content" id="modalImage">
+    </div>
+    <div id="modalCaption"></div>
+  </div>
 </div>
 
 <!-- PROJECT TEMPLATE - Copy and paste below to add more projects -->
@@ -288,7 +292,7 @@ author_profile: true
   border: 1px solid var(--border-color);
 }
 
-/* Project Media Grid for multiple images */
+/* Project Media Grid for multiple images - FIXED ASPECT RATIO */
 .project-media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -298,12 +302,14 @@ author_profile: true
 
 .project-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* Changed from cover to contain to show full image */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
   cursor: pointer;
+  background-color: var(--code-background-color); /* Background for letterboxing */
+  padding: 8px; /* Add some padding around the image */
 }
 
 .project-image:hover {
@@ -352,45 +358,69 @@ author_profile: true
   margin: 4rem 0;
 }
 
-/* Modal/Lightbox Styles */
+/* Modal/Lightbox Styles - IMPROVED */
 .modal {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 85%;
+  max-height: 80%;
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 8px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   animation: zoom 0.3s ease;
+  object-fit: contain; /* Ensure full image is visible */
 }
 
 @keyframes zoom {
-  from {transform: scale(0.8); opacity: 0;}
-  to {transform: scale(1); opacity: 1;}
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 .modal-close {
   position: absolute;
   top: 20px;
-  right: 35px;
+  right: 30px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
   z-index: 1001;
+  line-height: 1;
 }
 
 .modal-close:hover {
@@ -399,14 +429,11 @@ author_profile: true
 }
 
 #modalCaption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+  margin-top: 15px;
+  color: #fff;
   text-align: center;
-  color: #ccc;
-  padding: 10px 0;
   font-size: 1.1rem;
+  max-width: 80%;
 }
 
 /* Use Minimal Mistakes CSS variables for dark theme compatibility */
@@ -459,18 +486,23 @@ author_profile: true
   }
   
   .project-image {
-    height: 180px;
+    height: 200px; /* Slightly taller on mobile */
   }
   
-  .modal-content {
+  .modal-image-container {
     max-width: 95%;
-    max-height: 75%;
+    max-height: 70%;
   }
   
   .modal-close {
     top: 10px;
-    right: 20px;
+    right: 15px;
     font-size: 30px;
+  }
+  
+  #modalCaption {
+    font-size: 1rem;
+    max-width: 90%;
   }
 }
 
@@ -506,18 +538,23 @@ document.addEventListener('DOMContentLoaded', function() {
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
+      
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = "hidden";
     });
   });
 
   // Close modal when clicking X
   closeBtn.addEventListener('click', function() {
     modal.style.display = "none";
+    document.body.style.overflow = "auto";
   });
 
   // Close modal when clicking outside the image
   modal.addEventListener('click', function(e) {
     if (e.target === modal) {
       modal.style.display = "none";
+      document.body.style.overflow = "auto";
     }
   });
 
@@ -525,6 +562,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('keydown', function(e) {
     if (e.key === "Escape" && modal.style.display === "block") {
       modal.style.display = "none";
+      document.body.style.overflow = "auto";
     }
   });
 });
