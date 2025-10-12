@@ -23,7 +23,7 @@ author_profile: true
       <ul>
         <li>C# / C++</li>
         <li>Unity Engine</li>
-        <li>Git & Version Control</li>
+        <li>Github & Version Control</li>
       </ul>
     </div>
   </div>
@@ -70,14 +70,12 @@ author_profile: true
       </div>
 
       <div class="project-media">
-        <img src="/assets/images/juegodenavesScreenShot.png" alt="Juego De Naves Gameplay" class="project-image">
-        <!-- Add more images if needed -->
+        <img src="/assets/assets/images/juegodenavesScreenShot.png" alt="Juego De Naves Gameplay" class="project-image">
       </div>
     </div>
 
     <div class="project-links">
       <a href="https://github.com/CristalShiva/JUEGO1" class="btn btn--primary">View Source Code</a>
-      <a href="#" class="btn btn--outline">Live Demo</a>
     </div>
   </section>
 
@@ -122,9 +120,54 @@ author_profile: true
 
     <div class="project-links">
       <a href="https://github.com/yourusername/project2" class="btn btn--primary">View Source Code</a>
-      <a href="#" class="btn btn--outline">Live Demo</a>
     </div>
   </section>
+
+  <!-- PROJECT TEMPLATE - Copy and paste this section to add more projects -->
+  <!--
+  <div class="project-separator"></div>
+
+  <section class="project-section">
+    <div class="project-header">
+      <h3 class="project-title">Project Title</h3>
+      <div class="project-meta">
+        <span class="project-type">Game Genre</span>
+        <span class="project-duration">Development Time</span>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="project-description">
+        <p>Project description goes here.</p>
+        
+        <div class="project-features">
+          <h4>Key Features</h4>
+          <ul>
+            <li>Feature one</li>
+            <li>Feature two</li>
+            <li>Feature three</li>
+          </ul>
+        </div>
+
+        <div class="project-technologies">
+          <h4>Technologies Used</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">Technology 1</span>
+            <span class="tech-tag">Technology 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-media">
+        <img src="/assets/assets/images/your-screenshot.png" alt="Project Screenshot" class="project-image">
+      </div>
+    </div>
+
+    <div class="project-links">
+      <a href="https://github.com/yourusername/projectname" class="btn btn--primary">View Source Code</a>
+    </div>
+  </section>
+  -->
 
 </div>
 
@@ -144,7 +187,7 @@ author_profile: true
 
 .skill-category h4 {
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: var(--text-color);
 }
 
 .skill-category ul {
@@ -154,7 +197,7 @@ author_profile: true
 
 .skill-category li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Projects Container */
@@ -166,28 +209,28 @@ author_profile: true
 .project-section {
   margin: 3rem 0;
   padding: 2.5rem;
-  background: #ffffff;
+  background: var(--card-background);
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
 }
 
 .project-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #f8f9fa;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .project-title {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: var(--text-color);
 }
 
 .project-meta {
   display: flex;
   gap: 2rem;
-  color: #6c757d;
+  color: var(--muted-text-color);
   font-style: italic;
 }
 
@@ -201,6 +244,7 @@ author_profile: true
 
 .project-description {
   line-height: 1.7;
+  color: var(--text-color);
 }
 
 .project-features, .project-technologies {
@@ -209,11 +253,12 @@ author_profile: true
 
 .project-features h4, .project-technologies h4 {
   margin-bottom: 1rem;
-  color: #34495e;
+  color: var(--heading-color);
 }
 
 .project-features ul {
   padding-left: 1.5rem;
+  color: var(--text-color);
 }
 
 .project-features li {
@@ -229,12 +274,12 @@ author_profile: true
 }
 
 .tech-tag {
-  background: #e9ecef;
+  background: var(--tag-background);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.85rem;
-  color: #495057;
-  border: 1px solid #dee2e6;
+  color: var(--tag-text-color);
+  border: 1px solid var(--border-color);
 }
 
 /* Project Media */
@@ -246,7 +291,7 @@ author_profile: true
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -254,12 +299,14 @@ author_profile: true
   transform: scale(1.02);
 }
 
-/* Project Links */
+/* Project Links - Centered single button */
 .project-links {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 2px solid #f8f9fa;
+  border-top: 2px solid var(--border-color);
 }
 
 /* Buttons */
@@ -267,7 +314,6 @@ author_profile: true
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  margin: 0 0.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
@@ -276,26 +322,13 @@ author_profile: true
 }
 
 .btn--primary {
-  background: #007acc;
-  color: white;
-  border-color: #007acc;
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border-color: var(--button-primary-border);
 }
 
 .btn--primary:hover {
-  background: #005fa3;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 122, 204, 0.3);
-}
-
-.btn--outline {
-  background: transparent;
-  color: #007acc;
-  border-color: #007acc;
-}
-
-.btn--outline:hover {
-  background: #007acc;
-  color: white;
+  background: var(--button-primary-hover-bg);
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 122, 204, 0.3);
 }
@@ -303,8 +336,38 @@ author_profile: true
 /* Separators */
 .project-separator {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
   margin: 4rem 0;
+}
+
+/* Dark Theme Variables */
+:root {
+  --text-color: #2c3e50;
+  --heading-color: #34495e;
+  --muted-text-color: #6c757d;
+  --border-color: #e0e0e0;
+  --card-background: #ffffff;
+  --tag-background: #e9ecef;
+  --tag-text-color: #495057;
+  --button-primary-bg: #007acc;
+  --button-primary-text: #ffffff;
+  --button-primary-border: #007acc;
+  --button-primary-hover-bg: #005fa3;
+}
+
+/* Dark mode overrides for Minimal Mistakes dark theme */
+.skin--dark {
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --muted-text-color: #a0a0a0;
+  --border-color: #444444;
+  --card-background: #2d2d2d;
+  --tag-background: #444444;
+  --tag-text-color: #e0e0e0;
+  --button-primary-bg: #007acc;
+  --button-primary-text: #ffffff;
+  --button-primary-border: #007acc;
+  --button-primary-hover-bg: #005fa3;
 }
 
 /* Responsive Design */
@@ -326,12 +389,6 @@ author_profile: true
   
   .skills-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .btn {
-    display: block;
-    margin: 0.5rem 0;
-    text-align: center;
   }
 }
 
