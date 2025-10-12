@@ -23,7 +23,7 @@ author_profile: true
       <ul>
         <li>C# / C++</li>
         <li>Unity Engine</li>
-        <li>Github & Version Control</li>
+        <li>Git & Version Control</li>
       </ul>
     </div>
   </div>
@@ -70,7 +70,7 @@ author_profile: true
       </div>
 
       <div class="project-media">
-        <img src="/assets/images/juegodenavesScreenShot.png" alt="Juego De Naves Gameplay" class="project-image">
+        <img src="/assets/assets/images/juegodenavesScreenShot.png" alt="Juego De Naves Gameplay" class="project-image">
       </div>
     </div>
 
@@ -123,53 +123,53 @@ author_profile: true
     </div>
   </section>
 
-  <!-- PROJECT TEMPLATE - Copy and paste this section to add more projects -->
-  <!--
-  <div class="project-separator"></div>
-
-  <section class="project-section">
-    <div class="project-header">
-      <h3 class="project-title">Project Title</h3>
-      <div class="project-meta">
-        <span class="project-type">Game Genre</span>
-        <span class="project-duration">Development Time</span>
-      </div>
-    </div>
-
-    <div class="project-content">
-      <div class="project-description">
-        <p>Project description goes here.</p>
-        
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>Feature one</li>
-            <li>Feature two</li>
-            <li>Feature three</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Technologies Used</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Technology 1</span>
-            <span class="tech-tag">Technology 2</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-media">
-        <img src="/assets/assets/images/your-screenshot.png" alt="Project Screenshot" class="project-image">
-      </div>
-    </div>
-
-    <div class="project-links">
-      <a href="https://github.com/yourusername/projectname" class="btn btn--primary">View Source Code</a>
-    </div>
-  </section>
-  -->
-
 </div>
+
+<!-- PROJECT TEMPLATE - Copy and paste below to add more projects -->
+<!--
+<div class="project-separator"></div>
+
+<section class="project-section">
+  <div class="project-header">
+    <h3 class="project-title">Project Title</h3>
+    <div class="project-meta">
+      <span class="project-type">Game Genre</span>
+      <span class="project-duration">Development Time</span>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <div class="project-description">
+      <p>Project description goes here.</p>
+      
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>Feature one</li>
+          <li>Feature two</li>
+          <li>Feature three</li>
+        </ul>
+      </div>
+
+      <div class="project-technologies">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Technology 1</span>
+          <span class="tech-tag">Technology 2</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-media">
+      <img src="/assets/assets/images/your-screenshot.png" alt="Project Screenshot" class="project-image">
+    </div>
+  </div>
+
+  <div class="project-links">
+    <a href="https://github.com/yourusername/projectname" class="btn btn--primary">View Source Code</a>
+  </div>
+</section>
+-->
 
 <style>
 /* About Section */
@@ -187,7 +187,6 @@ author_profile: true
 
 .skill-category h4 {
   margin-bottom: 1rem;
-  color: var(--text-color);
 }
 
 .skill-category ul {
@@ -205,13 +204,13 @@ author_profile: true
   margin-top: 3rem;
 }
 
-/* Project Sections */
+/* Project Sections - Dark theme compatible */
 .project-section {
   margin: 3rem 0;
   padding: 2.5rem;
-  background: var(--card-background);
+  background: var(--background-color);
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border: 1px solid var(--border-color);
 }
 
@@ -244,7 +243,6 @@ author_profile: true
 
 .project-description {
   line-height: 1.7;
-  color: var(--text-color);
 }
 
 .project-features, .project-technologies {
@@ -253,12 +251,11 @@ author_profile: true
 
 .project-features h4, .project-technologies h4 {
   margin-bottom: 1rem;
-  color: var(--heading-color);
+  color: var(--text-color);
 }
 
 .project-features ul {
   padding-left: 1.5rem;
-  color: var(--text-color);
 }
 
 .project-features li {
@@ -266,7 +263,7 @@ author_profile: true
   line-height: 1.5;
 }
 
-/* Technology Tags */
+/* Technology Tags - Dark theme compatible */
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -274,11 +271,11 @@ author_profile: true
 }
 
 .tech-tag {
-  background: var(--tag-background);
+  background: var(--code-background-color);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.85rem;
-  color: var(--tag-text-color);
+  color: var(--text-color);
   border: 1px solid var(--border-color);
 }
 
@@ -291,7 +288,7 @@ author_profile: true
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
 }
 
@@ -309,7 +306,7 @@ author_profile: true
   border-top: 2px solid var(--border-color);
 }
 
-/* Buttons */
+/* Buttons - Using Minimal Mistakes variables */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -322,52 +319,46 @@ author_profile: true
 }
 
 .btn--primary {
-  background: var(--button-primary-bg);
-  color: var(--button-primary-text);
-  border-color: var(--button-primary-border);
+  background: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
 }
 
 .btn--primary:hover {
-  background: var(--button-primary-hover-bg);
+  background: var(--link-color-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 122, 204, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Separators */
+/* Separators - Dark theme compatible */
 .project-separator {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border-color), transparent);
   margin: 4rem 0;
 }
 
-/* Dark Theme Variables */
+/* Use Minimal Mistakes CSS variables for dark theme compatibility */
 :root {
+  --background-color: #fff;
   --text-color: #2c3e50;
-  --heading-color: #34495e;
   --muted-text-color: #6c757d;
   --border-color: #e0e0e0;
-  --card-background: #ffffff;
-  --tag-background: #e9ecef;
-  --tag-text-color: #495057;
-  --button-primary-bg: #007acc;
-  --button-primary-text: #ffffff;
-  --button-primary-border: #007acc;
-  --button-primary-hover-bg: #005fa3;
+  --primary-color: #007acc;
+  --link-color-hover: #005fa3;
+  --code-background-color: #f5f5f5;
 }
 
-/* Dark mode overrides for Minimal Mistakes dark theme */
-.skin--dark {
-  --text-color: #e0e0e0;
-  --heading-color: #ffffff;
-  --muted-text-color: #a0a0a0;
-  --border-color: #444444;
-  --card-background: #2d2d2d;
-  --tag-background: #444444;
-  --tag-text-color: #e0e0e0;
-  --button-primary-bg: #007acc;
-  --button-primary-text: #ffffff;
-  --button-primary-border: #007acc;
-  --button-primary-hover-bg: #005fa3;
+/* Dark theme overrides - Minimal Mistakes will handle these */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #2d2d2d;
+    --text-color: #e0e0e0;
+    --muted-text-color: #a0a0a0;
+    --border-color: #444444;
+    --primary-color: #007acc;
+    --link-color-hover: #005fa3;
+    --code-background-color: #3d3d3d;
+  }
 }
 
 /* Responsive Design */
