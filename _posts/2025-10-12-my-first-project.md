@@ -8,7 +8,7 @@ header:
   caption: "A sci-fi roguelite made in Unity"
 ---
 
-![Gameplay screenshot](/assets/assets/images/juegodenavesScreenShot.png)
+![Gameplay screenshot](/assets/images/juegodenavesScreenShot.png)
 
 **Description:**  
 *A Pathless Galaxy* is a 2D action roguelite where you explore planets and battle in shoot’em up segments.  
@@ -20,3 +20,4 @@ It combines exploration, combat, and procedurally generated levels.
 - Procedural generation
 
 [🎮 View on GitHub](LMAO)
+
