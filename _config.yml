@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "César Rivero Portfolio Github"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "César Augusto Rivero Duno"
+name                     : #""
 description              : "Game developer specializing in Game Design-Programming in Unity and Unreal."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "César Augusto Rivero Duno"
-  avatar           : "/assets/images/avatar.png"
+  avatar           : "/assets/assets/images/avatar.png"
   bio              : "Game developer specializing in Game Design-Programming in Unity and Unreal."
   location         : "Barcelona"
   email            : "cesarriverodu@hotmail.com"
