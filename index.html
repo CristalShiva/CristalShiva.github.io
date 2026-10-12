@@ -2,9 +2,10 @@
 layout: single
 title: "Game Design Portfolio"
 author_profile: true
+classes: wide
 ---
 
-## About Me
+<h2 id="about-me">About Me</h2>
 
 <div class="about-section">
   <p>I'm a Game Designer graduated in Video Game Design and Production (TecnoCampus - UPF, 2026). I focus on level design, combat and boss encounter design and game balance, and I like to build playable prototypes to test my ideas.</p>
@@ -44,7 +45,7 @@ author_profile: true
   </div>
 </div>
 
-## Featured Projects
+<h2 id="featured-projects">Featured Projects</h2>
 
 <div class="projects-container">
 
@@ -64,65 +65,9 @@ author_profile: true
         <p>A Tower Defense Toolkit is a playable tool that teaches how Tower Defense levels are designed. Instead of choosing premade towers with fixed stats, you build the tower yourself: damage, attack speed, range, area shape, damage type and more, all inside a limited point budget. Every level is a parametric design challenge that needs a specific configuration to be beaten.</p>
         <p>A level full of fast, weak enemies asks for a very different tower than a level with a few tough ones. The point budget makes sure no configuration is the best everywhere, so the real challenge is to understand why each parameter works in each situation. You learn how the genre is designed by playing with its numbers.</p>
         <p>I chose Tower Defense because it is a parametric genre by nature: it depends on connected numerical variables, it gives immediate feedback, and it needs no previous skill, so all the attention goes to design decisions instead of execution.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>6 levels: a tutorial and 5 design labs, about 50 minutes to 1 hour without retries</li>
-            <li>14 tower parameters, from damage, attack speed and range to critical hits, slow, stun, burn, poison, bounce and 6 area shapes</li>
-            <li>Point budget and exclusive parameters, so there is never a universally optimal tower</li>
-            <li>Enemy stats such as health, speed, armor, regeneration and resistances, with enemy roles you can read at a glance</li>
-            <li>Floating damage numbers and health bars that make the hidden variables visible</li>
-            <li>Feedback screen after each level that shows how well the knowledge was applied</li>
-            <li>Labs can be played in any order, or in the recommended order for guided learning</li>
-          </ul>
-        </div>
-        <div class="project-features">
-          <h4>The Labs</h4>
-          <ul>
-            <li><strong>Tutorial (Level 0):</strong> nine phases that unlock one system at a time: placing towers, launching waves, upgrading parameters, earning gold and the win and lose conditions</li>
-            <li><strong>Camera Lab:</strong> defend the same level from an isometric view and then from a top-down view, to see how perspective changes reading of space and decisions</li>
-            <li><strong>Parameter Unlock Lab:</strong> the 14 parameters are introduced one by one, each with a wave designed to make it essential, and a final challenge with every enemy type</li>
-            <li><strong>DPS Check Lab:</strong> free experimentation with no economy limit and no defeat. Reach and hold a damage per second threshold for five seconds and get an efficiency score</li>
-            <li><strong>Synergies Lab:</strong> only 3 active parameters per tower, so you combine specialised towers instead of building one that does everything</li>
-            <li><strong>Wave Design Lab:</strong> you design the attacking wave with a threat budget, watch it hit the base, and then have to defend against the wave you created</li>
-          </ul>
-        </div>
-        <div class="project-features">
-          <h4>Design Process</h4>
-          <ul>
-            <li>Analysed Plants vs. Zombies, Kingdom Rush and Bloons TD 6 to define tower placement (anchor points on the map, as in Kingdom Rush) and the core variables of the genre</li>
-            <li>Used Platformer Toolkit by Mark Brown as the main reference for how to teach design through exposed parameters</li>
-            <li>Structured the analysis and the design with the DDE framework (Design, Dynamics, Experience)</li>
-            <li>Cut parameters and enemy stats such as incremental attack speed, accumulator, split, shield and explosion because they added play value but little teaching value</li>
-            <li>Pivoted in the fourth iteration after a review with my tutor: the game was too close to a regular Tower Defense, so I changed from tutorialised levels to specialised labs, each one teaching a single design principle</li>
-          </ul>
-        </div>
-        <div class="project-features">
-          <h4>Playtesting and Balance</h4>
-          <ul>
-            <li>Internal playtests during development, plus informal feedback from people outside the project and my tutor</li>
-            <li>Re-tuned parameter costs and the difficulty curve of the waves, and increased gold income in phases that were too restrictive</li>
-            <li>Added checkpoints between waves so players can experiment without losing too much progress</li>
-            <li>Gave each enemy role (tank, fast, invisible, rage, regenerator) its own texture identity so the role is clear immediately</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Parametric Design</span>
-            <span class="tech-tag">Balance and Economy</span>
-            <span class="tech-tag">Level Design</span>
-            <span class="tech-tag">UX and Onboarding</span>
-            <span class="tech-tag">DDE Framework</span>
-            <span class="tech-tag">Kenney free asset packs</span>
-          </div>
-        </div>
       </div>
 
-      <div class="project-media-grid">
+      <div class="project-media-grid media-2col">
         <img src="/assets/images/TowerDefenseToolkit1.png" alt="A Tower Defense Toolkit lab selection menu" class="project-image clickable-image">
         <img src="/assets/images/TowerDefenseToolkit2.png" alt="A Tower Defense Toolkit parameter panel" class="project-image clickable-image">
         <img src="/assets/images/TowerDefenseToolkit3.png" alt="A Tower Defense Toolkit Camera Lab" class="project-image clickable-image">
@@ -130,7 +75,65 @@ author_profile: true
       </div>
     </div>
 
-    <div class="project-links" style="gap: 1rem; flex-wrap: wrap;">
+    <div class="project-details">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>6 levels: a tutorial and 5 design labs, about 50 minutes to 1 hour without retries</li>
+          <li>14 tower parameters, from damage, attack speed and range to critical hits, slow, stun, burn, poison, bounce and 6 area shapes</li>
+          <li>Point budget and exclusive parameters, so there is never a universally optimal tower</li>
+          <li>Enemy stats such as health, speed, armor, regeneration and resistances, with enemy roles you can read at a glance</li>
+          <li>Floating damage numbers and health bars that make the hidden variables visible</li>
+          <li>Feedback screen after each level that shows how well the knowledge was applied</li>
+          <li>Labs can be played in any order, or in the recommended order for guided learning</li>
+        </ul>
+      </div>
+      <div class="project-features">
+        <h4>The Labs</h4>
+        <ul>
+          <li><strong>Tutorial (Level 0):</strong> nine phases that unlock one system at a time: placing towers, launching waves, upgrading parameters, earning gold and the win and lose conditions</li>
+          <li><strong>Camera Lab:</strong> defend the same level from an isometric view and then from a top-down view, to see how perspective changes reading of space and decisions</li>
+          <li><strong>Parameter Unlock Lab:</strong> the 14 parameters are introduced one by one, each with a wave designed to make it essential, and a final challenge with every enemy type</li>
+          <li><strong>DPS Check Lab:</strong> free experimentation with no economy limit and no defeat. Reach and hold a damage per second threshold for five seconds and get an efficiency score</li>
+          <li><strong>Synergies Lab:</strong> only 3 active parameters per tower, so you combine specialised towers instead of building one that does everything</li>
+          <li><strong>Wave Design Lab:</strong> you design the attacking wave with a threat budget, watch it hit the base, and then have to defend against the wave you created</li>
+        </ul>
+      </div>
+      <div class="project-features">
+        <h4>Design Process</h4>
+        <ul>
+          <li>Analysed Plants vs. Zombies, Kingdom Rush and Bloons TD 6 to define tower placement (anchor points on the map, as in Kingdom Rush) and the core variables of the genre</li>
+          <li>Used Platformer Toolkit by Mark Brown as the main reference for how to teach design through exposed parameters</li>
+          <li>Structured the analysis and the design with the DDE framework (Design, Dynamics, Experience)</li>
+          <li>Cut parameters and enemy stats such as incremental attack speed, accumulator, split, shield and explosion because they added play value but little teaching value</li>
+          <li>Pivoted in the fourth iteration after a review with my tutor: the game was too close to a regular Tower Defense, so I changed from tutorialised levels to specialised labs, each one teaching a single design principle</li>
+        </ul>
+      </div>
+      <div class="project-features">
+        <h4>Playtesting and Balance</h4>
+        <ul>
+          <li>Internal playtests during development, plus informal feedback from people outside the project and my tutor</li>
+          <li>Re-tuned parameter costs and the difficulty curve of the waves, and increased gold income in phases that were too restrictive</li>
+          <li>Added checkpoints between waves so players can experiment without losing too much progress</li>
+          <li>Gave each enemy role (tank, fast, invisible, rage, regenerator) its own texture identity so the role is clear immediately</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Parametric Design</span>
+        <span class="tech-tag">Balance and Economy</span>
+        <span class="tech-tag">Level Design</span>
+        <span class="tech-tag">UX and Onboarding</span>
+        <span class="tech-tag">DDE Framework</span>
+        <span class="tech-tag">Kenney free asset packs</span>
+      </div>
+    </div>
+
+    <div class="project-links">
       <!-- TODO: replace # with the link to the build (itch.io, Drive, GitHub release...) -->
       <a href="#" class="btn btn--primary">Download Build</a>
       <!-- TODO: replace # with the link to the gameplay video -->
@@ -154,38 +157,6 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>Hellion is a fast-paced roguelike boomer shooter built around high-mobility FPS combat and retro-inspired action. Every run takes place in a different procedurally generated level, so the player has to keep moving, read the arena and adapt. The goal was a game that feels challenging but fair and makes you want to start one more run.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>Arena based fast paced shooter with high-mobility combat</li>
-            <li>Roguelike elements: every run is different, with procedural levels drawn from 20+ room designs</li>
-            <li>10 different power-ups</li>
-            <li>5 enemy types and a final boss encounter</li>
-            <li>A variety of weapons</li>
-            <li>Challenging but fair</li>
-          </ul>
-        </div>
-        <div class="project-features">
-          <h4>My Contribution</h4>
-          <ul>
-            <li>Designed the 20+ rooms, the 10 power-ups, the 5 enemy types and the final boss encounter</li>
-            <li>Built the core gameplay loops and the level design that make a run replayable</li>
-            <li>Worked in a team of 7</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Level Design</span>
-            <span class="tech-tag">Enemy Design</span>
-            <span class="tech-tag">Power-up Design</span>
-            <span class="tech-tag">Procedural Level Generation</span>
-            <span class="tech-tag">3ds Max</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
@@ -195,7 +166,41 @@ author_profile: true
       </div>
     </div>
 
-    <div class="project-links" style="gap: 1rem; flex-wrap: wrap;">
+    <div class="project-details">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>Arena based fast paced shooter with high-mobility combat</li>
+          <li>Roguelike elements: every run is different, with procedural levels drawn from 20+ room designs</li>
+          <li>10 different power-ups</li>
+          <li>5 enemy types and a final boss encounter</li>
+          <li>A variety of weapons</li>
+          <li>Challenging but fair</li>
+        </ul>
+      </div>
+      <div class="project-features">
+        <h4>My Contribution</h4>
+        <ul>
+          <li>Designed the 20+ rooms, the 10 power-ups, the 5 enemy types and the final boss encounter</li>
+          <li>Built the core gameplay loops and the level design that make a run replayable</li>
+          <li>Worked in a team of 7</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Level Design</span>
+        <span class="tech-tag">Enemy Design</span>
+        <span class="tech-tag">Power-up Design</span>
+        <span class="tech-tag">Procedural Level Generation</span>
+        <span class="tech-tag">3ds Max</span>
+      </div>
+    </div>
+
+    <div class="project-links">
       <a href="https://github.com/CristalShiva/HellionPublic" class="btn btn--primary">View on GitHub</a>
     </div>
   </section>
@@ -216,35 +221,6 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>Sodaina Senshi is a cinematic beat 'em up. You only have your katana to fight the Onis and save the temple. The design goal was skill-based swordplay: fast, readable and satisfying to master, wrapped in a strong cinematic presentation.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>Satisfying katana combat. Slash 'em!</li>
-            <li>Parry and deflect</li>
-            <li>4 enemy types and 20+ rooms to explore</li>
-            <li>Multiple phases final boss battle with 3 health bars</li>
-            <li>Highly detailed pixel art by Jan Puig</li>
-          </ul>
-        </div>
-        <div class="project-features">
-          <h4>My Contribution</h4>
-          <ul>
-            <li>Designed the combat mechanics and the cinematic presentation</li>
-            <li>Designed the final boss: 3 health bars and several different phases</li>
-            <li>Worked in a team of 6</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Combat Design</span>
-            <span class="tech-tag">Boss Design</span>
-            <span class="tech-tag">Aseprite</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
@@ -254,7 +230,38 @@ author_profile: true
       </div>
     </div>
 
-    <div class="project-links" style="gap: 1rem; flex-wrap: wrap;">
+    <div class="project-details">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>Satisfying katana combat. Slash 'em!</li>
+          <li>Parry and deflect</li>
+          <li>4 enemy types and 20+ rooms to explore</li>
+          <li>Multiple phases final boss battle with 3 health bars</li>
+          <li>Highly detailed pixel art by Jan Puig</li>
+        </ul>
+      </div>
+      <div class="project-features">
+        <h4>My Contribution</h4>
+        <ul>
+          <li>Designed the combat mechanics and the cinematic presentation</li>
+          <li>Designed the final boss: 3 health bars and several different phases</li>
+          <li>Worked in a team of 6</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Combat Design</span>
+        <span class="tech-tag">Boss Design</span>
+        <span class="tech-tag">Aseprite</span>
+      </div>
+    </div>
+
+    <div class="project-links">
       <a href="https://github.com/CristalShiva/SodainaSenshiPublic" class="btn btn--primary">View on GitHub</a>
     </div>
   </section>
@@ -263,7 +270,7 @@ author_profile: true
 
 </div>
 
-## Other Projects and Prototypes
+<h2 id="other-projects">Other Projects and Prototypes</h2>
 
 <div class="projects-container">
 
@@ -280,29 +287,31 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>A 2D platformer inspired by Catalan folklore. It was our first big project to learn game production hands-on: working with Agile and Scrum methodologies taught us how to plan, organise and deliver a game as a team.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>First big project that taught us game production</li>
-            <li>Made using Agile and Scrum methodologies</li>
-            <li>Cute and fun</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Photoshop</span>
-            <span class="tech-tag">Agile and Scrum</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
         <img src="/assets/images/CatalanGame1.png" alt="Catalan Game Screen" class="project-image clickable-image">
         <img src="/assets/images/CatalanGame2.png" alt="Catalan Game Gameplay" class="project-image clickable-image">
+      </div>
+    </div>
+
+    <div class="project-details single">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>First big project that taught us game production</li>
+          <li>Made using Agile and Scrum methodologies</li>
+          <li>Cute and fun</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Photoshop</span>
+        <span class="tech-tag">Agile and Scrum</span>
       </div>
     </div>
 
@@ -324,25 +333,6 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>My very first team project. I learnt the ropes of Unity while shaping my game design and getting to know how to produce a game within a deadline. The focus was classic arcade-style combat: enemy waves, power-ups to collect and a high score to chase.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>Wave-based enemy encounters</li>
-            <li>Power-up collection mechanics</li>
-            <li>High score tracking</li>
-            <li>Responsive controls</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Photoshop</span>
-            <span class="tech-tag">Arcade Combat Design</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
@@ -352,7 +342,28 @@ author_profile: true
       </div>
     </div>
 
-    <div class="project-links" style="gap: 1rem; flex-wrap: wrap;">
+    <div class="project-details single">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>Wave-based enemy encounters</li>
+          <li>Power-up collection mechanics</li>
+          <li>High score tracking</li>
+          <li>Responsive controls</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Photoshop</span>
+        <span class="tech-tag">Arcade Combat Design</span>
+      </div>
+    </div>
+
+    <div class="project-links">
       <a href="https://github.com/CristalShiva/JuegoDeNaves" class="btn btn--primary">View on GitHub</a>
     </div>
   </section>
@@ -372,29 +383,31 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>A recreation from scratch of Super Mario 64's game feel and systems, made to study what makes its movement and 3D platforming work so well. A project made to replicate and learn.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>Mario 64... on PC!</li>
-            <li>Power-up collection mechanics</li>
-            <li>Responsive controls and game feel</li>
-            <li>Project made to replicate and learn</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Game Feel</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
         <img src="/assets/images/MARIO1.png" alt="Mario Gameplay" class="project-image clickable-image">
         <img src="/assets/images/MARIO2.png" alt="Mario Gameplay" class="project-image clickable-image">
+      </div>
+    </div>
+
+    <div class="project-details single">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>Mario 64... on PC!</li>
+          <li>Power-up collection mechanics</li>
+          <li>Responsive controls and game feel</li>
+          <li>Project made to replicate and learn</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Game Feel</span>
       </div>
     </div>
 
@@ -415,30 +428,32 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>A first person puzzle game made in one week to learn how a hard-to-replicate mechanic works and how puzzles are built around it.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>Portals!</li>
-            <li>Puzzle game design</li>
-            <li>Physics!</li>
-            <li>Project made to learn</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Puzzle Design</span>
-            <span class="tech-tag">3ds Max</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
         <img src="/assets/images/Portal1.png" alt="Portal gameplay" class="project-image clickable-image">
         <img src="/assets/images/Portal2.png" alt="Portal Gameplay" class="project-image clickable-image">
+      </div>
+    </div>
+
+    <div class="project-details single">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>Portals!</li>
+          <li>Puzzle game design</li>
+          <li>Physics!</li>
+          <li>Project made to learn</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Puzzle Design</span>
+        <span class="tech-tag">3ds Max</span>
       </div>
     </div>
 
@@ -459,29 +474,31 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>A prototype made to learn what goes into a first person shooter: character movement, shooting, level layout and a score system.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>First person shooter character controller</li>
-            <li>Level design</li>
-            <li>High score system</li>
-            <li>Enemies that navigate the level</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Level Design</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
         <img src="/assets/images/FPS1.png" alt="FPS Gameplay" class="project-image clickable-image">
         <img src="/assets/images/FPS2.png" alt="FPS Gameplay" class="project-image clickable-image">
+      </div>
+    </div>
+
+    <div class="project-details single">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>First person shooter character controller</li>
+          <li>Level design</li>
+          <li>High score system</li>
+          <li>Enemies that navigate the level</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity</span>
+        <span class="tech-tag">Level Design</span>
       </div>
     </div>
 
@@ -502,28 +519,30 @@ author_profile: true
     <div class="project-content">
       <div class="project-description">
         <p>My first project in Unreal Engine, made over a weekend to get to know the engine and its visual tools.</p>
-
-        <div class="project-features">
-          <h4>Key Features</h4>
-          <ul>
-            <li>Unreal Engine</li>
-            <li>Nanite and ray tracing</li>
-            <li>High fidelity fishing mini game</li>
-          </ul>
-        </div>
-
-        <div class="project-technologies">
-          <h4>Tools and Focus</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">Unreal Engine</span>
-            <span class="tech-tag">Blueprints</span>
-          </div>
-        </div>
       </div>
 
       <div class="project-media-grid">
         <img src="/assets/images/VikingFishing1.png" alt="Viking Fishing Gameplay" class="project-image clickable-image">
         <img src="/assets/images/VikingFishing2.png" alt="Viking Fishing Gameplay" class="project-image clickable-image">
+      </div>
+    </div>
+
+    <div class="project-details single">
+      <div class="project-features">
+        <h4>Key Features</h4>
+        <ul>
+          <li>Unreal Engine</li>
+          <li>Nanite and ray tracing</li>
+          <li>High fidelity fishing mini game</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-technologies">
+      <h4>Tools and Focus</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Unreal Engine</span>
+        <span class="tech-tag">Blueprints</span>
       </div>
     </div>
 
@@ -945,6 +964,158 @@ author_profile: true
   /* Ensure no scrollbars on modal */
   .modal-open {
     overflow: hidden;
+  }
+</style>
+
+<style>
+  /* ===== WIDE LAYOUT OVERRIDES (added after the original styles) ===== */
+
+  /* Let the theme use more of the screen */
+  #main {
+    max-width: min(1700px, 96vw) !important;
+  }
+
+  .masthead__inner-wrap {
+    max-width: min(1700px, 96vw) !important;
+  }
+
+  /* Project cards: tighter and wider */
+  .projects-container {
+    margin-top: 1.2rem;
+  }
+
+  .project-section {
+    margin: 1.4rem 0;
+    padding: 1.6rem 2rem;
+    font-size: 0.8rem;
+  }
+
+  .project-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    margin: 0 0 0.3rem 0;
+  }
+
+  .project-meta {
+    flex-wrap: wrap;
+    gap: 0.4rem 2rem;
+    font-size: 0.85em;
+  }
+
+  /* Description on the left, screenshots on the right */
+  .project-content {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    gap: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .project-description {
+    line-height: 1.55;
+  }
+
+    .project-description p {
+      margin-bottom: 0.7rem;
+      line-height: 1.55;
+    }
+
+  .project-media-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.6rem;
+    margin-top: 0;
+  }
+
+    .project-media-grid.media-2col {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+  .project-image {
+    height: 140px;
+    padding: 4px;
+  }
+
+  /* Feature blocks in two columns below */
+  .project-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 2.5rem;
+  }
+
+    .project-details.single {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+  .project-features, .project-technologies {
+    margin: 0.7rem 0;
+  }
+
+    .project-features h4, .project-technologies h4 {
+      margin: 0 0 0.4rem 0;
+      font-size: 0.95em;
+    }
+
+    .project-features ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .project-features li {
+      margin-bottom: 0.3rem;
+      line-height: 1.45;
+      font-size: 1em;
+    }
+
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.65rem;
+  }
+
+  /* Links */
+  .project-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  .project-separator {
+    margin: 1.6rem 0;
+  }
+
+  .about-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-grid {
+    margin-top: 1rem;
+    gap: 1.5rem;
+  }
+
+  .skill-category li {
+    padding: 0.3rem 0;
+    font-size: 0.85em;
+  }
+
+  .skill-category h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .project-content {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .project-details {
+      grid-template-columns: 1fr;
+    }
+
+    .project-section {
+      padding: 1.2rem;
+    }
   }
 </style>
 
