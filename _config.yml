@@ -21,7 +21,7 @@ title                    : "César Rivero Portfolio Github"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : #""
-description              : "Game developer specializing in Game Design-Programming in Unity and Unreal."
+description              : "Game Designer specializing in level design, combat and boss encounter design."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "César Augusto Rivero Duno"
   avatar           : "/assets/images/avatar.png"
-  bio              : "Game developer specializing in Game Design-Programming in Unity and Unreal."
+  bio              : "Game Designer specializing in level design, combat and boss encounter design."
   location         : "Barcelona"
   email            : "cesarriverodu@hotmail.com"
   links:
